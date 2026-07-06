@@ -33,7 +33,6 @@ export default function Footer() {
           <h4>{label('Kompaniya', 'Компания', 'Company')}</h4>
           <Link href="/kontaktlar">{label('Kontaktlar', 'Контакты', 'Contacts')}</Link>
           <Link href="/katalog">{label('Katalog', 'Каталог', 'Catalog')}</Link>
-          <Link href="/virtual">{label("Uyda sinab ko'ring", 'Примерить дома', 'Try at Home')}</Link>
           <Link href="/kalkulator">{label('Kalkulator', 'Калькулятор', 'Calculator')}</Link>
         </div>
 

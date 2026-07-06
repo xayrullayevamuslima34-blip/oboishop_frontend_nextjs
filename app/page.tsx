@@ -57,7 +57,6 @@ export default function Home() {
           <p>{t('hero_sub')}</p>
           <div className={styles.heroBtns}>
             <Link href="/katalog" className={styles.btnPrimary}><i className="ti ti-layout-grid" /> {t('katalog')}</Link>
-            <Link href="/virtual" className={styles.btnSecondary}><i className="ti ti-eye" /> {t('sinab')}</Link>
           </div>
           <div className={styles.heroStats}>
             <div className={styles.stat}><div className={styles.statNum}>{sozlamalar.stat1Raqam}</div><div className={styles.statLabel}>{sozlamalar.stat1Label}</div></div>

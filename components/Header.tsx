@@ -35,7 +35,6 @@ export default function Header() {
         <nav className={styles.nav}>
           <Link href="/" className={styles.navLink}>{t('asosiy')}</Link>
           <Link href="/katalog" className={styles.kbtn}>{t('katalog')}</Link>
-          <Link href="/virtual" className={styles.navLink}><i className="ti ti-eye" /> {t('sinab')}</Link>
           <Link href="/kalkulator" className={styles.navLink}><i className="ti ti-calculator" /> {t('kalkulator')}</Link>
           <Link href="/kontaktlar" className={styles.navLink}>{t('kontakt')}</Link>
         </nav>
@@ -107,7 +106,6 @@ export default function Header() {
         <div className={styles.mobileMenu}>
           <Link href="/" className={styles.mobileLink} onClick={() => setMobileOpen(false)}>{t('asosiy')}</Link>
           <Link href="/katalog" className={styles.mobileLink} onClick={() => setMobileOpen(false)}>{t('katalog')}</Link>
-          <Link href="/virtual" className={styles.mobileLink} onClick={() => setMobileOpen(false)}>{t('sinab')}</Link>
           <Link href="/kontaktlar" className={styles.mobileLink} onClick={() => setMobileOpen(false)}>{t('kontakt')}</Link>
           <Link href="/sevimlilar" className={styles.mobileLink} onClick={() => setMobileOpen(false)}>{t('sevimlilar')}</Link>
           <Link href="/kalkulator" className={styles.mobileLink} onClick={() => setMobileOpen(false)}>{t('kalkulator')}</Link>

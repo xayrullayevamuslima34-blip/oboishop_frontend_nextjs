@@ -23,7 +23,6 @@ http://localhost:3000
 |--------|-----|
 | Bosh sahifa | `/` |
 | Katalog | `/katalog` |
-| Uyda sinab ko'ring | `/virtual` |
 | Sevimlilar | `/sevimlilar` |
 | Kontaktlar | `/kontaktlar` |
 

@@ -1,0 +1,94 @@
+.divider { height: 3px; background: linear-gradient(90deg, var(--beige), var(--accent), var(--beige)); }
+.breadcrumb { padding: 14px 48px; font-size: 13px; color: var(--text-muted); background: var(--cream); border-bottom: 1px solid var(--border); }
+.breadcrumb a { color: var(--text-muted); text-decoration: none; }
+.breadcrumb span { color: var(--brown-dark); font-weight: 500; }
+
+.page { padding: 36px 48px 64px; background: var(--cream); min-height: 500px; }
+
+.topBar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px; }
+.title { font-size: 26px; font-weight: 800; color: var(--brown-dark); display: flex; align-items: center; gap: 10px; font-family: Georgia, serif; }
+.title i { color: #e53935; }
+.count { font-size: 13px; color: var(--text-muted); margin-top: 4px; }
+
+.clearBtn {
+  background: none; border: 1px solid var(--border); border-radius: 10px;
+  padding: 9px 18px; font-size: 13px; color: #e53935; cursor: pointer;
+  display: flex; align-items: center; gap: 5px; transition: all 0.2s;
+  background: var(--white);
+}
+.clearBtn:hover { border-color: #e53935; }
+
+.grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; padding: 0 48px 48px; }
+
+.card {
+  position: relative; aspect-ratio: 9/16; overflow: hidden;
+  cursor: pointer; display: flex; align-items: center; justify-content: center;
+}
+.card > i { font-size: 48px; color: rgba(255,255,255,0.2); }
+
+.removeBtn {
+  position: absolute; top: 12px; right: 12px;
+  background: rgba(255,255,255,0.92); border: none;
+  width: 32px; height: 32px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer; color: #e53935; font-size: 16px;
+  transition: transform 0.2s;
+}
+.removeBtn:hover { transform: scale(1.1); }
+
+.hoverInfo {
+  position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(44,35,24,0.92) 0%, transparent 60%);
+  display: flex; flex-direction: column; justify-content: flex-end;
+  padding: 20px 16px; opacity: 0; transition: opacity 0.3s;
+}
+.card:hover .hoverInfo { opacity: 1; }
+
+.hiCol { font-size: 10px; color: rgba(255,255,255,0.5); margin-bottom: 3px; text-transform: uppercase; letter-spacing: 1px; }
+.hiName { font-size: 16px; font-weight: 700; color: #fff; margin-bottom: 8px; font-family: Georgia, serif; }
+.hiRow { display: flex; justify-content: space-between; margin-bottom: 4px; }
+.hiRow span:first-child { font-size: 10px; color: rgba(255,255,255,0.5); }
+.hiRow span:last-child { font-size: 11px; color: #fff; font-weight: 500; }
+.hiPrice {
+  margin-top: 8px; font-size: 15px; font-weight: 700; color: #fff;
+  background: rgba(196,168,130,0.3); border: 1px solid rgba(196,168,130,0.5);
+  border-radius: 8px; padding: 5px 10px; text-align: center;
+}
+.orderBtn {
+  margin-top: 10px; background: var(--accent); color: #fff;
+  border-radius: 18px; padding: 9px 0; width: 100%; font-size: 12px; font-weight: 600;
+  display: flex; align-items: center; justify-content: center; gap: 5px; text-decoration: none;
+}
+
+.empty { text-align: center; padding: 80px 20px; }
+.empty > i { font-size: 64px; color: var(--beige); display: block; margin-bottom: 20px; }
+.empty h2 { font-size: 22px; font-weight: 700; color: var(--brown-dark); margin-bottom: 10px; font-family: Georgia, serif; }
+.empty p { font-size: 14px; color: var(--text-muted); margin-bottom: 28px; }
+.emptyBtn {
+  background: var(--brown-dark); color: #fff; padding: 13px 30px;
+  border-radius: 28px; text-decoration: none; font-size: 14px; font-weight: 600;
+  display: inline-flex; align-items: center; gap: 6px;
+  transition: background 0.2s;
+}
+.emptyBtn:hover { background: var(--brown); }
+
+@media (max-width: 768px) {
+  .page { padding: 20px 16px 40px; }
+  .breadcrumb { padding: 12px 16px; }
+  .grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+.infoBox {
+  display: flex; align-items: flex-start; gap: 14px;
+  background: linear-gradient(135deg, #fdf8f0, #f5ede0);
+  border: 1px solid var(--beige); border-radius: 14px;
+  padding: 16px 20px; margin-bottom: 28px;
+}
+.infoIcon {
+  width: 40px; height: 40px; border-radius: 50%;
+  background: var(--accent); color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 18px; flex-shrink: 0;
+}
+.infoText strong { font-size: 13px; font-weight: 700; color: var(--brown-dark); display: block; margin-bottom: 4px; }
+.infoText p { font-size: 12px; color: var(--text-muted); line-height: 1.6; margin: 0; }

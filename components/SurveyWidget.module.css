@@ -1,0 +1,32 @@
+.wrap { position: fixed; bottom: 24px; left: 24px; z-index: 997; }
+
+.card {
+  position: relative; width: 280px; background: var(--white); border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(44,35,24,0.18); padding: 20px 18px 18px;
+  animation: slideIn 0.3s ease;
+}
+@keyframes slideIn { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+
+.close {
+  position: absolute; top: 10px; right: 10px; background: none; border: none;
+  color: var(--text-muted); font-size: 16px; cursor: pointer; padding: 4px;
+}
+
+.savol { font-size: 14px; font-weight: 600; color: var(--text); margin-bottom: 16px; padding-right: 16px; line-height: 1.4; }
+
+.emojiRow { display: flex; justify-content: space-between; gap: 8px; }
+.emojiCol { display: flex; flex-direction: column; align-items: center; gap: 6px; flex: 1; }
+.emojiBtn {
+  width: 50px; height: 50px; border-radius: 50%; border: 1px solid var(--border);
+  background: var(--cream); font-size: 24px; cursor: pointer;
+  display: flex; align-items: center; justify-content: center; transition: transform 0.15s, background 0.15s;
+}
+.emojiBtn:hover { transform: scale(1.1); background: var(--cream-dark); }
+.emojiLabel { font-size: 11px; color: var(--text-muted); }
+
+.rahmat { font-size: 14px; font-weight: 600; color: var(--text); text-align: center; padding: 10px 0; }
+
+@media (max-width: 480px) {
+  .wrap { left: 16px; bottom: 16px; right: 16px; }
+  .card { width: auto; }
+}
